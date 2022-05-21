@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DealX-Aut-Practical]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.dealx.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Deal-X Aut Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="org.dealx.testCases.TC4">
+        <methods>
+          <include name="login"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.dealx.testCases.TC4 -->
+      <class name="org.dealx.testCases.TC3">
+        <methods>
+          <include name="performSearch" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.dealx.testCases.TC3 -->
+      <class name="org.dealx.testCases.TC5">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="addToCart"/>
+        </methods>
+      </class> <!-- org.dealx.testCases.TC5 -->
+      <class name="org.dealx.testCases.TC6_B">
+        <methods>
+          <include name="navigateSubCat"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.dealx.testCases.TC6_B -->
+      <class name="org.dealx.testCases.TC6_A">
+        <methods>
+          <include name="navigateMenu"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.dealx.testCases.TC6_A -->
+    </classes>
+  </test> <!-- Deal-X Aut Test(failed) -->
+</suite> <!-- Failed suite [DealX-Aut-Practical] -->

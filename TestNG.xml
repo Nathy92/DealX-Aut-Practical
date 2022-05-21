@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DealX-Aut-Practical">
+
+	<listeners>
+		<listener class-name="org.dealx.utilities.Reporting" />
+	</listeners>
+
+	<test name="Deal-X Aut Test">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+				<class name="org.dealx.testCases.TC1" />
+				<class name="org.dealx.testCases.TC2" />
+				<class name="org.dealx.testCases.TC3" />
+				<class name="org.dealx.testCases.TC4" />
+				<class name="org.dealx.testCases.TC5" />
+				<class name="org.dealx.testCases.TC6_A" />
+				<class name="org.dealx.testCases.TC6_B" />
+		</classes>
+	</test>
+
+</suite>
